@@ -4,12 +4,13 @@ import "fmt"
 
 func main() {
 	testLine := NewLine()
-	testLine.NewTrain("打法", 6)
-	testLine.NewTrain("ddd", 10)
-	testLine.NewTrain("aaa", 20)
+	testLine.NewTrain("列車1", 3)
+	testLine.NewTrain("列車ee", 2)
+	testLine.NewTrain("列車e1", 10)
+	testLine.NewTrain("列車341", 19)
+	testLine.NewTrain("列車133", 50)
+	testLine.NewTrain("列車09", 60)
 
-
-	for _,x := range testLine.GetSignal() {
-		fmt.Println(x)
-	}
+	fmt.Println(testLine.toString())
+	fmt.Println(testLine)
 }
